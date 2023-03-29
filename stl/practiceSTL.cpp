@@ -107,6 +107,107 @@ int main(){
 
 
 
+
+
+/*   
+
+//    explain stack 
+    stack<int>s;
+    s.push(5);
+    s.push(10);
+    s.push(13);
+    s.push(14);
+    s.push(15);
+    s.pop();
+    // for (auto it:s)
+    cout<<s.top()<<" ";
+    cout<<endl;
+    cout<<s.size()<<endl;
+    s.emplace(10);
+    cout<<s.size()<<endl;
+    cout<<s.empty()<<endl;
+     stack<int>s2;
+     s.swap(s2);
+     cout<<s2.top()<<endl;
+     cout<<s.empty()<<endl;
+*/
+
+
+
+/*
+// explain queue 
+    queue<int>q;
+    q.push(5);
+    q.push(5);
+    q.push(5);
+    q.push(5);
+    q.emplace(6);
+
+    cout<<q.front()<<endl;
+    cout<<q.back()<<endl;
+    cout<<q.size()<<endl;
+    cout<<q.empty()<<endl;
+
+    // swap size push emplace function same as stack ;
    
+
+
+*/
+
+
+/*
+    // explain priority queue 
+    priority_queue<int>pq;
+    pq.push(5);
+    pq.push(125);
+    pq.push(35);
+    pq.push(45);
+    cout<<pq.top()<<endl;
+
+    // here pushing operation is in an increasing order ;
+    // large element sabse last me aayegaa and chhota element sabse pahle aayrag/
+     
+
+    // agar hme iskoo reverse order me print ya push karna hai to hme "greater<int>pq" ka usr karna padega
+
+    priority_queue<int,vector<int>,greater<int>> pq1;
+    pq1.push(3);
+    pq1.push(5);
+    pq1.push(37);
+    pq1.push(1);
+    pq1.pop();
+    cout<<pq1.top()<<endl;
+    // for(auto it:pq1)
+    // cout<<it<<" ";
+
+
+
+    */
+
+
+
+
+
+//    explain set 
+    set<int>s;
+    s.insert(5);
+    s.insert(5);
+    s.insert(5);
+    s.insert(5);
+    s.insert(6);
+    s.insert(7);
+    s.insert(8);
+
+
+    for(auto it:s)
+    cout<<it<<" ";
+    cout<<endl;
+    // auto it = s.find(5);
+    auto a=s.find(5);
+    cout<<*a<<endl;
+    int cnt = s.count(5);
+    cout<<cnt<<endl;
+
+
     return 0;
 }
