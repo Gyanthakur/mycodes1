@@ -4,9 +4,6 @@ int main(){
 
 return 0;
 }
-
-
-
 class Solution {
   public:
     vector<int> topK(vector<int>& a, int k) {
