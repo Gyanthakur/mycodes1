@@ -1,0 +1,7 @@
+this is my google arcade program
+gsutil mb -p qwiklabs-gcp-01-2076d789ef11 gs://qwiklabs-gcp-01-2076d789ef11
+
+gcloud functions deploy helloWorld \
+  --stage-bucket qwiklabs-gcp-01-2076d789ef11 \
+  --trigger-topic hello_world \
+  --runtime nodejs8
